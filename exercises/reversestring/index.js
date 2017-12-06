@@ -9,12 +9,14 @@
 function reverse(str) {
 //    return str.split('').reverse().join('');
 
+/*
     let reversed = '';
     for (let character of str) {
         reversed = character + reversed;
     }
 
     return reversed;
+    */
 
 /*
     let reversed = str.split('');    
@@ -31,15 +33,11 @@ function reverse(str) {
     }
     return reversed.join('');
 */
-
+    debugger;
     return str.split('').reduce((rev, char) => char + rev, '');
 }
 
-function swap(a, b) {
-    let temp = b;
-    b = a;
-    a = temp;
-    return [a, b];
-}
+reverse('asdf');
+
 
 module.exports = reverse;
