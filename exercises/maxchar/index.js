@@ -11,7 +11,7 @@
 //   Does the given string have any repeated characters in it ?
 
 function maxChar(str) {
-      const charMap = {};
+  const charMap = {};
   let max = 0;
   let maxChar = '';
 
@@ -42,6 +42,14 @@ function maxChar(str) {
       maxChar = char;
     }
   }
+
+  for (let prop in charMapOne) {
+    if(charMapTwo[prop] !== charMapOne[prop]) {
+      return false;
+    }
+  }
+
+  return true;
 
   return maxChar;
   
